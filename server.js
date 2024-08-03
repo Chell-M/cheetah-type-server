@@ -18,7 +18,7 @@ expressApp.use(cors({
 }));
 
 // Test endpoint
-expressApp.get('/test', (req, res) => {
+expressApp.get('*', (req, res) => {
   res.send('Test endpoint is working!');
 });
 
